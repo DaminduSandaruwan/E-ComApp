@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        brightness: Brightness.dark,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomePage(),
@@ -33,6 +34,21 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.black,
         title: Text("ShopApp"),
         centerTitle: true,
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.search),
+            color: Colors.white,
+            onPressed: (){
+
+            },
+          ),
+          IconButton(
+            icon: Icon(Icons.shopping_cart),
+            onPressed: (){
+              
+            },
+          ),
+        ],
       ),
     );
   }
