@@ -45,10 +45,28 @@ class _HomePageState extends State<HomePage> {
           IconButton(
             icon: Icon(Icons.shopping_cart),
             onPressed: (){
-              
+
             },
           ),
         ],
+      ),
+      drawer: Drawer(
+        child: ListView(
+          children: <Widget>[
+            UserAccountsDrawerHeader(
+              accountName: Text("Damindu Sandaruwan"),
+              accountEmail: Text("test@gmail.com"),
+              currentAccountPicture: GestureDetector(
+                child: CircleAvatar(
+                  child: Icon(
+                    Icons.person,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
