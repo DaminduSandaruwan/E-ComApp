@@ -64,6 +64,9 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
+              decoration: BoxDecoration(
+                color: Colors.black54
+              ),
             ),
           ],
         ),
