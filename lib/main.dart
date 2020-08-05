@@ -31,6 +31,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0.1,
         backgroundColor: Colors.black,
         title: Text("ShopApp"),
         centerTitle: true,
