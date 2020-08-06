@@ -161,6 +161,13 @@ class _HomePageState extends State<HomePage> {
       body: ListView(
         children: <Widget>[
           image_carousel,
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              'Categorize',
+            ),
+          ),
+          
         ],
       ),
     );
