@@ -20,7 +20,10 @@ class HorizontalList extends StatelessWidget {
             image_location: 'assets/images/category/logoo.png',
             image_caption: 'Category 3',
           ),
-          
+          Category(
+            image_location: 'assets/images/category/logoo.png',
+            image_caption: 'Category 3',
+          ),
         ],
       ),
     );
@@ -54,12 +57,16 @@ class Category extends StatelessWidget {
               alignment: Alignment.topCenter,
               child: Text(
                 image_caption,
+                style: TextStyle(
+                  fontSize: 12,
+                ),
               ),
             ),
           ),
         ),
       ),
-
     );
   }
 }
+
+

@@ -1,3 +1,4 @@
+import 'package:ecomapp/components/gridview_products.dart';
 import 'package:ecomapp/components/horizontal_listview.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
@@ -169,6 +170,18 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           HorizontalList(),
+
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Text(
+              'Recent Products',
+            ),
+          ),
+
+          Container(
+            height: 320,
+            child: Products(),
+          ),
         ],
       ),
     );
