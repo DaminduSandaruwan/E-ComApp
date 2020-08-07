@@ -6,6 +6,14 @@ class Products extends StatefulWidget {
 }
 
 class _ProductsState extends State<Products> {
+  var product_list = [
+    {
+      "name":"Blazer",
+      "picture":"assets/images/products/blazer1.jpeg",
+      "old_price":120,
+      "price":85,
+    }
+  ];
   @override
   Widget build(BuildContext context) {
     return Container(
