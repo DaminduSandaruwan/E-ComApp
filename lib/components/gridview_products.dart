@@ -15,10 +15,10 @@ class _ProductsState extends State<Products> {
     },
 
     {
-      "name":"Blazer",
+      "name":"Red Dress",
       "picture":"assets/images/products/dress1.jpeg",
-      "old_price":120,
-      "price":85,
+      "old_price":100,
+      "price":50,
     },
 
   ];
@@ -60,13 +60,20 @@ class SingleProducts extends StatelessWidget {
             },
             child: GridTile(
               footer: Container(
-                color: Colors.white,
+                color: Colors.white70,
                 child: ListTile(
                   leading: Text(
                     prod_name,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.black
+                    ),
+                  ),
+                  title: Text(
+                    "\$$prod_price",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w400
                     ),
                   ),
                 ),
