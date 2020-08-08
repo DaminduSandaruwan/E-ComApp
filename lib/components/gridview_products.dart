@@ -1,3 +1,4 @@
+import 'package:ecomapp/pages/product_details.dart';
 import 'package:flutter/material.dart';
 
 class Products extends StatefulWidget {
@@ -21,7 +22,19 @@ class _ProductsState extends State<Products> {
       "price":50,
     },
 
-    
+    {
+      "name":"Skirt",
+      "picture":"assets/images/products/skt1.jpeg",
+      "old_price":100,
+      "price":50,
+    },
+
+    {
+      "name":"Hills",
+      "picture":"assets/images/products/hills1.jpeg",
+      "old_price":100,
+      "price":50,
+    },
 
   ];
   @override
@@ -58,7 +71,11 @@ class SingleProducts extends StatelessWidget {
         child: Material(
           child: InkWell(
             onTap: (){
-
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => ProductDetails(),
+                ),
+              );
             },
             child: GridTile(
               footer: Container(
