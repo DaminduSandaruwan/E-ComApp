@@ -27,7 +27,7 @@ class _ProductDetailsState extends State<ProductDetails> {
             icon: Icon(Icons.search),
             color: Colors.white,
             onPressed: (){
-
+              
             },
           ),
           IconButton(
@@ -42,7 +42,12 @@ class _ProductDetailsState extends State<ProductDetails> {
         children: <Widget>[
           Container(
             height: 300,
-            color: Colors.white,
+            child: GridTile(
+              child: Container(
+                color: Colors.white,
+                child: Image.asset(widget.product_details_picture),
+              ),
+            ),
           ),
         ], 
       ),

@@ -60,7 +60,7 @@ class SingleProducts extends StatelessWidget {
   final prod_old_price;
   final prod_price;
 
-  const SingleProducts({this.prod_name, this.prod_picture, this.prod_old_price, this.prod_price});
+  SingleProducts({this.prod_name, this.prod_picture, this.prod_old_price, this.prod_price});
   
 
   @override
@@ -77,7 +77,7 @@ class SingleProducts extends StatelessWidget {
                     product_details_name: prod_name,
                     product_details_new_price: prod_price,
                     product_details_old_price: prod_old_price,
-                    product_details_picture: prod_price,
+                    product_details_picture: prod_picture,
                   ),
                 ),
               );
