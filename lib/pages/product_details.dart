@@ -48,10 +48,39 @@ class _ProductDetailsState extends State<ProductDetails> {
                 child: Image.asset(widget.product_details_picture),
               ),
               footer: Container(
-                color: Colors.white,
+                color: Colors.black87,
                 child: ListTile(
-                  title: Text(
+                  leading: Text(
                     widget.product_details_name,
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                    ),
+                  ),
+                  title: Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: Text(
+                          "\$${widget.product_details_old_price}",
+                          style: TextStyle(
+                            fontWeight: FontWeight.w200,
+                            color: Colors.white,
+                            fontSize: 16,
+                            decoration: TextDecoration.lineThrough
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Text(
+                          "\$${widget.product_details_new_price}",
+                          style: TextStyle(
+                            color: Colors.red,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
