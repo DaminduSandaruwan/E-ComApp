@@ -47,6 +47,14 @@ class _ProductDetailsState extends State<ProductDetails> {
                 color: Colors.white,
                 child: Image.asset(widget.product_details_picture),
               ),
+              footer: Container(
+                color: Colors.white,
+                child: ListTile(
+                  title: Text(
+                    widget.product_details_name,
+                  ),
+                ),
+              ),
             ),
           ),
         ], 
