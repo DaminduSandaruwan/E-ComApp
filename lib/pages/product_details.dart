@@ -86,6 +86,93 @@ class _ProductDetailsState extends State<ProductDetails> {
               ),
             ),
           ),
+          Row(
+            children: <Widget>[
+              //SIZE BUTTON
+              Expanded(
+                child: MaterialButton(
+                  onPressed: (){
+
+                  },
+                  color: Colors.black,
+                  textColor: Colors.white,
+                  elevation: 0.2,
+                  child: Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: Text("Size"),
+                      ),
+                      Expanded(
+                        child: Icon(Icons.arrow_drop_down),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+
+              //COLOUR BUTTON
+              Expanded(
+                child: MaterialButton(
+                  onPressed: (){
+
+                  },
+                  color: Colors.black,
+                  textColor: Colors.white,
+                  elevation: 0.2,
+                  child: Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: Text("Colour"),
+                      ),
+                      Expanded(
+                        child: Icon(Icons.arrow_drop_down),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+
+              //QUANTITY BUTTON
+              Expanded(
+                child: MaterialButton(
+                  onPressed: (){
+
+                  },
+                  color: Colors.black,
+                  textColor: Colors.white,
+                  elevation: 0.2,
+                  child: Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: Text("Qty"),
+                      ),
+                      Expanded(
+                        child: Icon(Icons.arrow_drop_down),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
+
+          Row(
+            children: <Widget>[
+              Expanded(
+                child: MaterialButton(
+                  onPressed: (){
+
+                  },
+                  color: Colors.red,
+                  textColor: Colors.white,
+                  elevation: 0.2,
+                  child: Text(
+                    "Buy now"
+                  ),
+                ),
+              ),
+            ],
+          ),
         ], 
       ),
     );
