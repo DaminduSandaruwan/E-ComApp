@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
 
 class ProductDetails extends StatefulWidget {
+
+  final product_details_name;
+  final product_details_new_price;
+  final product_details_old_price;
+  final product_details_picture;
+
+  ProductDetails({this.product_details_name, this.product_details_new_price, this.product_details_old_price, this.product_details_picture});  
+
   @override
   _ProductDetailsState createState() => _ProductDetailsState();
 }
@@ -30,7 +38,14 @@ class _ProductDetailsState extends State<ProductDetails> {
           ),
         ],
       ),
-      
+      body: ListView(
+        children: <Widget>[
+          Container(
+            height: 300,
+            color: Colors.white,
+          ),
+        ], 
+      ),
     );
   }
 }
