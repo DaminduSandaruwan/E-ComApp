@@ -171,6 +171,24 @@ class _ProductDetailsState extends State<ProductDetails> {
                   ),
                 ),
               ),
+              IconButton(
+                icon: Icon(
+                  Icons.add_shopping_cart,
+                  color: Colors.red,
+                ),
+                onPressed: (){
+                  
+                },
+              ),
+              IconButton(
+                icon: Icon(
+                  Icons.favorite_border,
+                  color: Colors.red,
+                ),
+                onPressed: (){
+                  
+                },
+              ),
             ],
           ),
         ], 
